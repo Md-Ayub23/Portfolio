@@ -1,5 +1,5 @@
 import { useInView } from '../hooks/useInView'
-import { Github, Linkedin, Mail, ChevronDown, ArrowRight } from 'lucide-react'
+import { Github, Linkedin, Mail, ChevronDown, ArrowRight, Download } from 'lucide-react'
 
 const Hero = () => {
   const [ref, isInView] = useInView()
@@ -30,6 +30,13 @@ const Hero = () => {
           </a>
           <a href="#contact" className="px-8 py-4 rounded-full glass text-slate-300 font-semibold text-lg hover:bg-slate-800 transition-colors flex items-center gap-2">
             <Mail size={20} /> Get in Touch
+          </a>
+          <a 
+            href="/resume.pdf" 
+            download="A_Mohammed_Ayub_Resume.pdf"
+            className="px-8 py-4 rounded-full glass border border-accent-emerald/30 text-accent-emerald font-semibold text-lg hover:bg-accent-emerald/10 transition-colors flex items-center gap-2"
+          >
+            <Download size={20} /> Resume
           </a>
         </div>
 

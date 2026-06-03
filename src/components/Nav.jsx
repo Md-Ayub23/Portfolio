@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Download } from 'lucide-react'
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -39,6 +39,13 @@ const Nav = () => {
             </a>
           ))}
           <a
+            href="/resume.pdf"
+            download="A_Mohammed_Ayub_Resume.pdf"
+            className="text-sm font-medium text-accent-emerald hover:text-accent-emerald/80 transition-colors flex items-center gap-1.5"
+          >
+            <Download size={16} /> Resume
+          </a>
+          <a
             href="mailto:ayub23022@gmail.com?subject=Job%20Opportunity%20-%20AI/ML%20Engineer&body=Hi%20Ayub,%0A%0AI%20came%20across%20your%20portfolio%20and..."
             className="px-5 py-2.5 rounded-full bg-gradient-to-r from-accent-violet to-accent-cyan text-white text-sm font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-accent-violet/25"
           >
@@ -67,6 +74,14 @@ const Nav = () => {
               {link.label}
             </a>
           ))}
+          <a
+            href="/resume.pdf"
+            download="A_Mohammed_Ayub_Resume.pdf"
+            onClick={() => setMobileOpen(false)}
+            className="text-accent-emerald hover:text-accent-emerald/80 transition-colors py-2 flex items-center gap-2"
+          >
+            <Download size={16} /> Download Resume
+          </a>
           <a
             href="mailto:ayub23022@gmail.com?subject=Job%20Opportunity%20-%20AI/ML%20Engineer&body=Hi%20Ayub,%0A%0AI%20came%20across%20your%20portfolio%20and..."
             className="px-5 py-2.5 rounded-full bg-gradient-to-r from-accent-violet to-accent-cyan text-white text-sm font-semibold text-center mt-2"
