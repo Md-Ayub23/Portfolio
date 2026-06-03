@@ -4,7 +4,7 @@ import { Database } from 'lucide-react'
 const Experience = () => {
   const experiences = [
     {
-      role: 'AI/ML Engineer',
+      role: 'AI/ML Engineer Intern',
       company: 'Radiance Testing Solutions',
       period: 'March 2026 – Present',
       description: 'Built Pixel Perfect — an AI-powered visual UI regression platform. Engineered Playwright scraping, Figma API integration, and Claude Opus-powered visual comparison engine achieving ~90% defect detection accuracy. Developed FastAPI backend orchestrating export→scrape→compare pipeline, reducing defect reporting from hours to under 5 minutes.',
