@@ -1,10 +1,6 @@
 import Section from './Section'
 import { Sparkles } from 'lucide-react'
-
-// ─── UPDATE YOUR PHOTO HERE ───
-// Just paste your new image URL below and save.
-// Works with: Imgur, Cloudinary, GitHub raw, Google Drive direct links, etc.
-const PHOTO_URL = 'ayub.jpeg'
+import ayubPhoto from '../assets/ayub.jpeg'
 
 const About = () => {
   return (
@@ -40,18 +36,10 @@ const About = () => {
             <div className="gradient-border p-1 w-72 h-72 md:w-80 md:h-80">
               <div className="relative w-full h-full rounded-xl overflow-hidden">
                 <img
-                  src={PHOTO_URL}
+                  src={ayubPhoto}
                   alt="A. Mohammed Ayub"
                   className="w-full h-full object-cover object-top"
-                  onError={(e) => {
-                    e.target.style.display = 'none'
-                    e.target.nextSibling.style.display = 'flex'
-                  }}
                 />
-                {/* Fallback initials if image fails to load */}
-                <div className="hidden absolute inset-0 bg-gradient-to-br from-accent-violet to-accent-cyan items-center justify-center text-3xl font-bold text-white">
-                  MA
-                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
               </div>
             </div>
