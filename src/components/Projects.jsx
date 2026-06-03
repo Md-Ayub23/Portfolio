@@ -76,7 +76,7 @@ const Projects = () => {
     {
   title: 'Time Sales Forecasting',
   category: 'ML Pipeline',
-  description: 'Built a Time sales forecasting pipeline on the Superstore dataset using Facebook Prophet with log-transformation and Category × Segment × Region regressors. Tuned changepoint_prior_scale via grid search achieving SMAPE of 18.27%. Deployed an interactive Streamlit dashboard with Plotly for region/segment filtering and forecast visualization.',
+  description: 'Built a Time sales forecasting pipeline on the Superstore dataset using Facebook Prophet with log-transformation and Category × Segment × Region regressors. Tuned changepoint_prior_scale via grid search achieving SMAPE of 18.27%.',
   tech: ['Python', 'Prophet', 'Scikit-learn', 'Pandas', 'NumPy', 'Streamlit', 'Plotly'],
   github: 'https://github.com/Md-Ayub23/Sales-forecasting-with-prophet',
   link: 'https://github.com/Md-Ayub23/Sales-forecasting-with-prophet',
