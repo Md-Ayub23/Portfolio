@@ -14,8 +14,8 @@ const Projects = () => {
       category: 'Automation',
       description: 'End-to-end B2B email automation pipeline with contact discovery, email verification, AI-personalized generation, and real-time analytics dashboard. Saves ~8 hours/week of manual outreach.',
       tech: ['Python', 'FastAPI', 'Gemini', 'Gmail API', 'Streamlit'],
-      github: 'https://github.com/Md-Ayub23/ai-outreach-system',
-      link: 'https://github.com/Md-Ayub23/ai-outreach-system',
+      github: 'https://github.com/Md-Ayub23/AI-outreach-Agent',
+      link: 'https://github.com/Md-Ayub23/AI-outreach-Agent',
       featured: true,
     },
     {
@@ -32,8 +32,8 @@ const Projects = () => {
       category: 'Automation',
       description: 'AI-powered visual UI regression platform using Claude Opus for human-level layout reasoning. Automated Playwright scraping + Figma API integration, achieving ~90% defect detection accuracy.',
       tech: ['Python', 'FastAPI', 'Playwright', 'Claude Opus', 'Figma API', 'Supabase'],
-      github: 'https://github.com/Md-Ayub23/pixel-perfect',
-      link: 'https://github.com/Md-Ayub23/pixel-perfect',
+      // github: 'https://github.com/Md-Ayub23/pixel-perfect',
+      // link: 'https://github.com/Md-Ayub23/pixel-perfect',
       featured: true,
     },
     {
@@ -41,8 +41,8 @@ const Projects = () => {
       category: 'Automation',
       description: 'Automated GST compliance system with rule-based mismatch detection, multi-channel alerting (dashboard + WhatsApp), and modular backend for evolving regulations.',
       tech: ['Python', 'FastAPI', 'WhatsApp API', 'Supabase', 'LLMs'],
-      github: 'https://github.com/Md-Ayub23/compliance-guard',
-      link: 'https://github.com/Md-Ayub23/compliance-guard',
+      github: 'https://github.com/Md-Ayub23/governanceai_ui',
+      link: 'https://github.com/Md-Ayub23/governanceai_ui',
       featured: false,
     },
     {
@@ -50,8 +50,8 @@ const Projects = () => {
       category: 'Gen AI',
       description: 'RAG-based chatbot over company CRM schema using vector embeddings and retrieval-grounded LLM responses. Reduced hallucination to near-zero and cut support lookup time by ~60%.',
       tech: ['Python', 'LangChain', 'Vector DB', 'FastAPI', 'LLMs'],
-      github: 'https://github.com/Md-Ayub23/crm-knowledge-assistant',
-      link: 'https://github.com/Md-Ayub23/crm-knowledge-assistant',
+      // github: 'https://github.com/Md-Ayub23/crm-knowledge-assistant',
+      // link: 'https://github.com/Md-Ayub23/crm-knowledge-assistant',
       featured: true,
     },
     {
@@ -59,8 +59,8 @@ const Projects = () => {
       category: 'ML Pipeline',
       description: 'End-to-end ML pipeline with 9 domain-driven features, correlation pruning, and soft voting ensemble (LogReg, DT, RF, XGBoost) achieving ~86% recall on churners.',
       tech: ['Python', 'Scikit-learn', 'XGBoost', 'Pandas', 'Joblib'],
-      github: 'https://github.com/Md-Ayub23/telecom-churn-prediction',
-      link: 'https://github.com/Md-Ayub23/telecom-churn-prediction',
+      github: 'https://github.com/Md-Ayub23/Telecom-churn-prediction',
+      link: 'https://github.com/Md-Ayub23/Telecom-churn-prediction',
       featured: false,
     },
     {
@@ -68,10 +68,20 @@ const Projects = () => {
       category: 'NLP',
       description: 'Full NLP pipeline over 3 combined datasets with TF-IDF vectorization. Benchmarked Logistic Regression and SVM with user-level features, achieving ~88% F1-score.',
       tech: ['Python', 'Scikit-learn', 'NLTK', 'Pandas', 'TF-IDF'],
-      github: 'https://github.com/Md-Ayub23/cyberbullying-detection',
-      link: 'https://github.com/Md-Ayub23/cyberbullying-detection',
+      github: 'https://github.com/Md-Ayub23/cyberbully-comment-prediction',
+      link: 'https://github.com/Md-Ayub23/cyberbully-comment-prediction',
       featured: false,
     },
+
+    {
+  title: 'Time Sales Forecasting',
+  category: 'ML Pipeline',
+  description: 'Built a Time sales forecasting pipeline on the Superstore dataset using Facebook Prophet with log-transformation and Category × Segment × Region regressors. Tuned changepoint_prior_scale via grid search achieving SMAPE of 18.27%. Deployed an interactive Streamlit dashboard with Plotly for region/segment filtering and forecast visualization.',
+  tech: ['Python', 'Prophet', 'Scikit-learn', 'Pandas', 'NumPy', 'Streamlit', 'Plotly'],
+  github: 'https://github.com/Md-Ayub23/Sales-forecasting-with-prophet',
+  link: 'https://github.com/Md-Ayub23/Sales-forecasting-with-prophet',
+  featured: false,
+ },
   ]
 
   const filtered = filter === 'All' ? projects : projects.filter(p => p.category === filter)
